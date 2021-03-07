@@ -7,6 +7,7 @@ const ArticleItem = ({article}) => {
       <Link href="/article/[id]" as={`/article/${article.id}`}>
         <a>
           <h3 className={articleStyles.h3}>{article.title} &rarr;</h3>
+          <p  className={articleStyles.p}>{article.excerpt}</p>
           <p  className={articleStyles.p}>{article.body}</p>
         </a>
       </Link>

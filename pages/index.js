@@ -1,4 +1,6 @@
 import ArticleList from "../components/Articles"
+//import {server} from '../config'
+
 
 export default function Home({articles}) {
   console.log(articles)
@@ -7,7 +9,7 @@ export default function Home({articles}) {
       <h1>Hello from next index.js</h1>
       
       <ul>
-      <ArticleList articles={articles} />
+        <ArticleList articles={articles} />
       </ul>
 
     </div>
@@ -23,3 +25,12 @@ export const getStaticProps = async () => {
     }
   }
 }
+// export const getStaticProps = async () => {
+//   const res = await fetch(`${server}/api/`)   
+//   const articles = await res.json()
+//   return {
+//     props: {
+//       articles
+//     }
+//   }
+// }

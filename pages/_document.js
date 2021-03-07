@@ -1,3 +1,4 @@
+//ON THIS PAGE YOU CAN MODIFY THE DOCUMENT SECTION OF YOUR HTML
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
