@@ -1,0 +1,22 @@
+.nav {
+  height: 50px;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: noen;
+}
+
+.title {
+  color: red;
+}
+.title span {
+  color: orange;
+}
+

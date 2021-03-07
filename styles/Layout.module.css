@@ -1,9 +1,13 @@
+.grid {
+  display: grid;
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -12,8 +16,9 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  font-size: 1.25rem;
 }
 
 .footer {
