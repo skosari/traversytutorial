@@ -4,7 +4,7 @@ const ArticleList = ({articles}) => {
   return (
     <>
     {articles.map(x=>(
-      <li className={articleStyles.lineItem}>
+      <li className={articleStyles.lineItem} key={x.id}>
         <ArticleItem article={x} />
       </li>
       ))

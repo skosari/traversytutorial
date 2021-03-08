@@ -6,7 +6,7 @@ const article = ({article}) => {
   
   
   const router = useRouter()
-  const { id } = router.query
+  const { id } = router.query //this gives us access to the id in the URL
 
   return (
     <>
@@ -53,4 +53,21 @@ export const getStaticPaths = async () => {
   //now if we 'npm run build && next export' in our package.json then we will build all available pages based on how many ids are available
 }
 
+
+//lOCAL DATA BEING SERVED IN DEV AND BUILD MODES BY USING ../../../config/index.js
+// export const getStaticProps = async (context) => {
+//   const res = await fetch(`${server}/api/articles${context.params.id}`)
+//   const article = await res.json()
+//   return {
+//     props: {
+//       article
+//     }
+//   }
+// }export const getStaticPaths = async () => {
+//   const res = await fetch(`${server}/api/articles`)
+//   const articles = await res.json()
+//   const ids = articles.map((article) => article.id)
+//   const paths = ids.map((id) => ({ params: {id: id.toString()}}))
+//   return {paths, fallback: false}
+// }
 export default article
